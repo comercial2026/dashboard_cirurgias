@@ -33,7 +33,7 @@ if not st.session_state['login']:
             st.session_state['login'] = True
             st.session_state['user'] = username.capitalize()
             st.success(f"Bem-vindo(a), {username.capitalize()}!")
-            st.experimental_rerun()  # 🔁 força recarregar o app logado
+            st.rerun()  # 🔁 força recarregar o app logado
         else:
             st.error("Usuário ou senha incorretos")
 
