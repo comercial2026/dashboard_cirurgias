@@ -22,18 +22,23 @@ users = {
 
 if 'login' not in st.session_state:
     st.session_state['login'] = False
+
 if not st.session_state['login']:
     st.title("🔒 Login")
     username = st.text_input("Usuário")
     password = st.text_input("Senha", type="password")
+
     if st.button("Entrar"):
         if username.lower() in users and users[username.lower()] == password:
             st.session_state['login'] = True
             st.session_state['user'] = username.capitalize()
             st.success(f"Bem-vindo(a), {username.capitalize()}!")
+            st.experimental_rerun()  # 🔁 força recarregar o app logado
         else:
             st.error("Usuário ou senha incorretos")
+
     st.stop()
+
 
 # ========================
 # 🔹 CARREGAR DADOS
