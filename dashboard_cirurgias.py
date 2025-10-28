@@ -48,4 +48,14 @@ def carregar_dados():
         vendedores = ["Thania","Fábia","Everton","Welba","Patricia","Mileni"]
         medicos = ["Dr. Silva","Dra. Costa","Dr. Pereira","Dra. Almeida","Dr. Ramos","Dra. Santos"]
         procedimentos = ["Artroscopia","Histerectomia","Colecistectomia","Catarata","Hernioplastia","Laparoscopia"]
-        cidades_estados = [("São Paulo","SP"),("Rio de Janeiro]()_
+        cidades_estados = [
+    ("São Paulo", "SP"),
+    ("Rio de Janeiro", "RJ"),
+    ("Belo Horizonte", "MG"),
+    ("Recife", "PE"),
+    ("Curitiba", "PR"),
+    ("Porto Alegre", "RS"),
+    ("Fortaleza", "CE"),
+    ("Brasília", "DF"),
+    ("Salvador", "BA")
+]
